@@ -11,7 +11,7 @@ def perse_exuasion(line, unknows="xyz"):
             sign=1
         elif c in unknows:
             value=float(num) if num else 1.0
-            coef[unknows.index(c)]+=sign*value
+            coef[unknows.index(c)]=sign*value
             sign=1
             num=""
         else:
