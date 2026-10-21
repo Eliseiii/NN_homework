@@ -66,9 +66,6 @@ def train(x, labels, epochs=40, lr=0.5, batch_size=100):
 
     return W, b
 
-def predict(X,W,b):
-    return np.argmax(X@W+b, axis=1)
-
 def split(X, labels,val_ratio=0.2):
     order=np.random.permutation(len(X))
     n_val=int(len(X)*val_ratio)
